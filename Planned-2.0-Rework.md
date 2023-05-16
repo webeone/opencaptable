@@ -31,6 +31,6 @@ Where a warrant provides a quantity, we want to add a validation to require a qu
 
 We added an early_exercisable` field on our Plan Security issuances. It's an optional boolean field but ideally should be required and just set it to False rather than omit it if it's not True. This is a breaking change, however, so this was postponed to v2.
 
-# Deprecation Tracking Tooling
+# Breaking Change Tracking
 
 We've started to use "$comment" fields in the schemas on properties to mark planned deprecations or breaking changes. A standardized format there plus some tooling to traverse the schema and pull these out would go a long way towards helping with maintenance. 
