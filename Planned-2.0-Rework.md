@@ -21,11 +21,11 @@ As discussed in PR #397, we want to refactor our equity structure so that we are
 
 ![229243462-5de69afe-e082-443d-bccb-ce9a3a24ee6f](https://github.com/Open-Cap-Table-Coalition/Open-Cap-Format-OCF/assets/5049984/137aabe5-6ebb-43a0-ba43-c76ea98cf8d8)
 
-## Make Quantity Source required When Quantity is Specified in Warrant Issuance
+### Make Quantity Source required When Quantity is Specified in Warrant Issuance
 
 Where a warrant provides a quantity, we want to add a validation to require a quantity_source. This is currently a breaking change and has not been implemented.
 
-## Require `Early_Exercisable` Prop on Equity Comp Issuance
+### Require `Early_Exercisable` Prop on Equity Comp Issuance
 
 We added an early_exercisable` field on our Plan Security issuances. It's an optional boolean field but ideally should be required and just set it to False rather than omit it if it's not True. This is a breaking change, however, so this was postponed to v2.
 
